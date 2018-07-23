@@ -2,7 +2,6 @@
 layout:     keynote
 title:      "windows版本的phantomjs-2.1.1-windows安装"
 subtitle:   ""
-iframe:     "//huangxuan.me/js-module-7day/"
 date:       2018-07-09
 author:     "Loni"
 tags:
