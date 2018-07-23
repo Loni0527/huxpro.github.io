@@ -4,7 +4,7 @@ SEOTitle: 山顶洞洞主 | Loni
 header-img: img/home-bg.jpg
 email: niwota568@163.com
 description: "这应该是自我介绍的地方"
-keyword: "黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计"
+keyword: "Loni, Loni Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计"
 url: "http://www.loni.club"              # your host, for absolute URL
 baseurl: "/"                             # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -42,7 +42,7 @@ plugins: [jekyll-paginate]
 
 
 
-# Markdown settings
+# Markdown 设置
 # replace redcarpet to kramdown,
 # although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
 # document: http://jekyllrb.com/docs/configuration/#kramdown
@@ -52,34 +52,34 @@ kramdown:
 
 
 
-# Disqus settings
-disqus_username: hux
+# Disqus 设置
+disqus_username: loni
 
-# Netease settings
+# 网易设置
 netease_comment: false
 
 
 
-# Analytics settings
-# Baidu Analytics 
+# 分析设置
+# 百度分析 
 # ba_track_id: [your track id]
 
-# Google Analytics
-ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
+# 谷歌分析
+ga_track_id: 'UA-49627206-1'            # 格式: UA-xxxxxx-xx
 ga_domain: huangxuan.me
 
 
 
-# Sidebar settings
-sidebar: true                           # whether or not using Sidebar.
+# 边栏设置
+sidebar: true                           # 是否使用边栏.
 sidebar-about-description: "离开世界之前，一切都是过程"
-sidebar-avatar: /img/avatar-hux-dog.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/avatar-hux-dog.jpg      # 使用绝对 URL, 如 '/' 或 '/about/'
 
 
 
-# Featured Tags
-featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+# 特色标签
+featured-tags: true                     # 是否使用功能标记
+featured-condition-size: 1              # 如果标记的大小大于此条件值, 则将对其进行特征码
 
 
 
@@ -95,34 +95,34 @@ friends: [
     #     title: "Su",
     #     href: "http://su.gallery/"
     # },{
-        title: "乱序",
-        href: "http://mida.re/"
-    },{
-        title: "前端外刊评论",
-        href: "http://qianduan.guru/"
-    },{
-        title: "天镶的博客",
-        href: "http://lingyu.wang/"
-    },{
-        title: "Luke 的自留地",
-        href: "http://hmqk1995.github.io"
-    },{
-        title: "Ebn's Blog",
-        href: "http://ebnbin.com/"
-    },{
-        title: "SmdCn's Blog",
-        href: "http://blog.smdcn.net"
-    },{
-        title: "David's Game",
-        href: "https://www.ruoyaowu.com/"
-    },{
-        title: "DHong Say",
-        href: "http://dhong.co"
-    },{
-        title: "尹峰以为",
-        href: "http://ingf.github.io/"
-    },{
-        title: "解旻的博客",
-        href: "http://xieminis.me/"
+    #     title: "乱序",
+    #     href: "http://mida.re/"
+    # },{
+    #     title: "前端外刊评论",
+    #     href: "http://qianduan.guru/"
+    # },{
+    #     title: "天镶的博客",
+    #     href: "http://lingyu.wang/"
+    # },{
+    #     title: "Luke 的自留地",
+    #     href: "http://hmqk1995.github.io"
+    # },{
+    #     title: "Ebn's Blog",
+    #     href: "http://ebnbin.com/"
+    # },{
+    #     title: "SmdCn's Blog",
+    #     href: "http://blog.smdcn.net"
+    # },{
+    #     title: "David's Game",
+    #     href: "https://www.ruoyaowu.com/"
+    # },{
+    #     title: "DHong Say",
+    #     href: "http://dhong.co"
+    # },{
+    #     title: "尹峰以为",
+    #     href: "http://ingf.github.io/"
+    # },{
+    #     title: "解旻的博客",
+    #     href: "http://xieminis.me/"
     }
 ]
