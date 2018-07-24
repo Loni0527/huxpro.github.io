@@ -1,14 +1,15 @@
 ---
-layout:     keynote
-title:      "Python 内建函数大全"
-subtitle:   ""
-iframe:     "//huangxuan.me/pwa-in-my-pov/"
-navcolor:   "invert"
-date:       2018-06-05
-author:     "Loni"
+author: Loni
+date: 2018-06-05 00:00
+iframe: //huangxuan.me/pwa-in-my-pov/
+layout: keynote
+navcolor: invert
+status: public
+subtitle:
 tags:
-    - Python
-    - 随手记
+  - Python
+  - 随手记
+title: 'Python 内建函数大全'
 ---
 
 Python 解释器内置了许多函数和类型，列表如下（按字母排序）（省略了几个我没用过或者不常用的）。
@@ -28,7 +29,7 @@ Python 解释器内置了许多函数和类型，列表如下（按字母排序�
 | chr() | frozenset() | list() | range() | vars() |
 | classmethod() | getattr() | locals() | repr() | zip() |
 | compile() | globals() | map() | reversed() | `__import__()` |
-| complex() | hasattr() | max() | round() |   |
+| complex() | hasattr() | max() | round() |   |
 
 ## abs(_x_)
 
@@ -992,7 +993,4 @@ def zip(*iterables):
 True
 ```
 
-作者：wcode
-链接：https://juejin.im/post/5ae3ee096fb9a07aa7676883
-来源：掘金
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+原文作者：[wcode](https://juejin.im/post/5ae3ee096fb9a07aa7676883)

@@ -1,31 +1,32 @@
 ---
-layout:     post
-title:      "基于PySpider的weibo.cn爬虫"
-subtitle:   ""
-date:       2018-03-10 12:00:00
-author:     "Loni"
-header-img: "img/post-bg-apple-event-2015.jpg"
+author: Loni
+date: 2018-03-10 12:00
+layout: post
+status: public
+subtitle:
 tags:
-    - Python
-    - Pyspider
-    - 爬虫
-    - Weibo
+  - Python
+  - Pyspider
+  - 爬虫
+  - Weibo
+title: 基于Pyspider的weibo.cn爬虫
 ---
+
 # 一些学习资料
 
 1.  [Fiddler简易使用教程 抓cookies用**（必看）**](https://link.jianshu.com?t=http://xijiacs.lofter.com/post/1d96cd64_a0f4013)
-2.  PySpider简易教程 整个爬虫用到的框架**（必看）**(https://www.jianshu.com/p/36290e6acf45)
-3.  HTTP Header入门详解 在模拟登录过程中要涉及到http头的设置，需要了解基本信息(https://link.jianshu.com?t=http://my.oschina.net/abian/blog/131548?fromerr=rY5qyfx5)
-4.  全程模拟新浪微博登录2015(https://link.jianshu.com?t=http://blog.csdn.net/u010487568/article/details/46932839) 这个分析了新浪微博网页版现在还在用的登录过程，其中使用到的最新脚本ssologin.js版本号1.4.18。不过本文主要是基于wap版的爬虫，这个没必要看，如果想进一步爬取网页版的微博可以参考学习。
-5.  Sina微博爬取@pyspider(https://link.jianshu.com?t=http://blog.csdn.net/dipolar/article/details/49661083) 这篇文章通过用户名和密码获取wap版微博的cookies后再进行后续操作，也可参考。
-6.  PyQuery文档(https://link.jianshu.com?t=https://pythonhosted.org/pyquery/index.html) `&&` CSS选择器(https://link.jianshu.com?t=http://www.w3schools.com/cssref/css_selectors.asp)`&&`Python正则表达式re package文档(https://link.jianshu.com?t=https://docs.python.org/2/library/re.html)
+2.  [PySpider简易教程 整个爬虫用到的框架**（必看）**](https://www.jianshu.com/p/36290e6acf45)
+3.  [HTTP Header入门详解](https://link.jianshu.com?t=http://my.oschina.net/abian/blog/131548?fromerr=rY5qyfx5) 在模拟登录过程中要涉及到http头的设置，需要了解基本信息
+4.  [全程模拟新浪微博登录2015](https://link.jianshu.com?t=http://blog.csdn.net/u010487568/article/details/46932839) 这个分析了新浪微博网页版现在还在用的登录过程，其中使用到的最新脚本ssologin.js版本号1.4.18。不过本文主要是基于wap版的爬虫，这个没必要看，如果想进一步爬取网页版的微博可以参考学习。
+5.  [Sina微博爬取@pyspider](https://link.jianshu.com?t=http://blog.csdn.net/dipolar/article/details/49661083) 这篇文章通过用户名和密码获取wap版微博的cookies后再进行后续操作，也可参考。
+6.  [PyQuery文档](https://link.jianshu.com?t=https://pythonhosted.org/pyquery/index.html) `&&` [CSS选择器](https://link.jianshu.com?t=http://www.w3schools.com/cssref/css_selectors.asp)`&&`[Python正则表达式re package文档](https://link.jianshu.com?t=https://docs.python.org/2/library/re.html)
     `Python`页面爬下来以后用于操作页面元素获取需要的内容**（必看）**
 
 # 获取cookies用于模拟登陆
 
 参考学习资料1里面设置好fiddler，然后打开<a>http://weibo.cn/</a> 没登陆的话登陆。在登录的状态下打开你要进行爬取的页面，观察fiddler里抓到的包，得到需要的cookies信息
 
-   获取cookies
+   获取cookies
 对应设置好PySpider里的`crawl_config`，需要注意的是`cookies`和`headers`，考虑到我的代码逻辑我把这两个都放在`crawl_config`里而不是具体的爬取函数里。关于头的设置也可以参考fiddler里`Headers`一栏，完整代码贴在最后可以参考我的设置。
 
 # 爬虫逻辑

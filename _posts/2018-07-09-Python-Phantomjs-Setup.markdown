@@ -1,18 +1,19 @@
 ---
-layout:     keynote
-title:      "windows版本的phantomjs-2.1.1-windows安装"
-subtitle:   ""
-date:       2018-07-09
-author:     "Loni"
+author: Loni
+date: 2018-07-09 00:00
+layout: keynote
+status: public
+subtitle:
 tags:
-    - 随手记
-    - Python
-    - Windows
+  - 随手记
+  - Python
+  - Windows
+title: windows版本的phantomjs-2.1.1-windows安装
 ---
 
 #### 1.下载
 
-<pre>链接：http://pan.baidu.com/s/1dEUl6dN 密码：oij8</pre>
+链接：http://pan.baidu.com/s/1dEUl6dN 密码：oij8
 
 #### 2.安装
 
@@ -26,5 +27,9 @@ tags:
 
 在命令窗口敲phantomjs -v查看版本号
 
+![](/img/in-post/post-phantomjs-120230.jpg)
+
+
 此时说明安装成功
+
 

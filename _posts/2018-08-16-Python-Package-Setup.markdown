@@ -1,27 +1,27 @@
 ---
-layout:     post
-title:      "python 相关模块安装 国内镜像地址"
-date:       2018-08-16 12:00:00
-author:     "Loni"
-header-img: "img/post-bg-miui6.jpg"
+author: Loni
+date: 2018-08-16 12:00
+layout: post
+status: public
 tags:
-    - Python
-    - Package
+  - Python
+  - Package
+title: 'python 相关模块安装 国内镜像地址'
 ---
 
 python 相关模块安装 国内镜像地址
 
 pipy国内镜像目前有：
 
-http://pypi.douban.com/  豆瓣
+[豆瓣](http://pypi.douban.com/)
 
-http://pypi.hustunique.com/  华中理工大学
+[华中理工大学](http://pypi.hustunique.com/)  
 
-http://pypi.sdutlinux.org/  山东理工大学
+[山东理工大学](http://pypi.sdutlinux.org/)  
 
-http://pypi.mirrors.ustc.edu.cn/  中国科学技术大学
+[中国科学技术大学](http://pypi.mirrors.ustc.edu.cn/ )
 
-https://pypi.tuna.tsinghua.edu.cn/ 清华大学
+[清华大学](https://pypi.tuna.tsinghua.edu.cn/ )
 
 对于pip这种在线安装的方式来说，很方便，但网络不稳定的话很要命。使用国内镜像相对好一些，
 
@@ -34,7 +34,7 @@ pip install web.py -i http://pypi.douban.com/simple
 要配制成默认的话，需要创建或修改配置文件（linux的文件在~/.pip/pip.conf，windows在%HOMEPATH%\pip\pip.ini），修改内容为：
 
 code:
-
+```
 [global]
 
 index-url = http://pypi.douban.com/simple
@@ -58,208 +58,4 @@ pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple paramiko==2.0.2
 pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple pycparser==2.16
 
 pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple PyMySQL==0.7.9
-
-++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-Python开发 常用模块安装
-
-包括Python，eclipse，jdk，pydev，pip，setuptools，beautifulsoup，pyyaml，nltk，mysqldb的下载安装配置。
-*************************************************
-python
-下载：
-python-2.7.6.amd64.msi
-<a>http://www.python.org/</a>
-Python 2.7.6 released
-Python 2.7.6 is now available.
-<a>http://www.python.org/</a>download/releases/2.7.6/
-Windows X86-64 MSI Installer (2.7.6) [1] (sig)
-
-安装
-配置：
-我的电脑->属性->高级->环境变量->系统变量中的PATH增加:C:\Python27;
-验证：
-在桌面建立一个文件pt.py，内容为print 'hello python'
-在cmd中输入命令python C:\Users\***\Desktop\pt.py
-***为电脑用户名。
-
-C:\Users\***>python C:\Users\***\Desktop\pt.py
-hello python
-C:\Users\***>
-
-*************************************************
-Eclipse：
-eclipse-java-indigo-SR2-win32-x86_64.zip
-<a>http://www.eclipse.org/downloads/</a>
-Older Versions
-<a>http://wiki.eclipse.org/Older_Versions_Of_Eclipse</a>
-Eclipse Indigo SR2 Packages (v 3.7.2)
-<a>http://www.eclipse.org/downloads/</a>packages/release/indigo/sr2
-Eclipse IDE for Java Developers, (128 MB)
-Downloaded 1,226,421 TimesDetails Windows 32-bit  64-bit 
-<a>http://www.eclipse.org/downloads/</a>download.php?file=/technology/epp/downloads/release/indigo/SR2/eclipse-java-indigo-SR2-win32-x86_64.zip
-Download eclipse-java-indigo-SR2-win32-x86_64.zip from:
-
-*************************************************
-jdk：
-jdk-7u45-windows-x64.exe
-<a>http://www.oracle.com/technetwork/java/javase/downloads/index.html</a>
-Windows x64 125.31 MB     jdk-7u45-windows-x64.exe
-<a>http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html</a>
-
-*************************************************
-pydev
-为了在Eclipse中进行python工程的开发。
-<a>http://sourceforge.net/projects/pydev/files/</a>
-PyDev for Eclipse
-Looking for the latest version? Download PyDev 3.2.0.zip (8.2 MB)
-版本一直在更新中，几天前是3.1.0.zip
-下载完，解压缩，将features和plugins文件夹中的内容分别复制到eclipse的features和plugins文件夹下。
-重复则替换。
-具体方法见windows xp，32位，环境下，Eclipse+python平台搭建
-<a>http://blog.sina.com.cn/s/blog_8af1069601019uaw.html</a>
-“安装python插件”，打开eclipse先来配置preference-》PyDev-》Interpreter-Python-》New python的执行exe文件的目录
-
-*************************************************
-pip
-<a>https://pypi.python.org/pypi/pip</a>
-Download
-pip-1.4.1.tar.gz
-A tool for installing and managing Python packages.
-解压缩，在cmd中进入到pip-1.4.1目录，执行 python setup.py install
-报错：
-ImportError: No module named setuptools
-所以，需要先安装setuptools
-
-*************************************************
-setuptools
-<a>https://pypi.python.org/pypi/setuptools/</a>
-setuptools 2.0.2
-点击右侧Downloads按钮，跳至Downloads
-Scroll to the very bottom of the page to find the links.
-需要到页面底部去找链接下载。
-File Type Py Version Uploaded on Size
-setuptools-2.0.2-py2.py3-none-any.whl (md5)  Python Wheel  3.4 2013-12-29 527KB
-setuptools-2.0.2.tar.gz (md5)  Source  2013-12-29 765KB
-下载setuptools-2.0.2.tar.gz (md5)
-解压缩
-在cmd中进入到setuptools-2.0.2目录，执行 python setup.py install
-成功标志：
-Installed c:\python27\lib\site-packages\setuptools-2.0.2-py2.7.egg
-Processing dependencies for setuptools==2.0.2
-Finished processing dependencies for setuptools==2.0.2
-继续安装pip
-
-*************************************************
-pip
-在cmd中进入到pip-1.4.1目录，执行 python setup.py install
-成功标记：
-Installed c:\python27\lib\site-packages\pip-1.4.1-py2.7.egg
-Processing dependencies for pip==1.4.1
-Finished processing dependencies for pip==1.4.1
-添加到系统环境变量Path：C:\Python27\Scripts;
-在cmd测试，输入pip，输出：
-C:\Users\***>pip
-Usage:
-  pip [options]
-Commands:
-  install                     Install packages.
-  uninstall                   Uninstall packages.
-  freeze                      Output installed packages in requirements format.
-  list                        List installed packages.
-  show                        Show information about installed packages.
-  search                      Search PyPI for packages.
-  wheel                       Build wheels from your requirements.
-  zip                         Zip individual packages.
-  unzip                       Unzip individual packages.
-  bundle                      Create pybundles.
-  help                        Show help for commands.
-
-*************************************************
-BeautifulSoup
-可以利用pip进行安装：
-在cmd中敲入命令查找BeautifulSoup：
-C:\Users\***>pip search BeautifulSoup
-BeautifulSoup             - HTML/XML parser for quick-turnaround applications
-                            like screen-scraping.
-pynliner                  - Python CSS-to-inline-styles conversion tool for
-                            HTML using BeautifulSoup and cssutils
-Detextile                 - Convert HTML to Textile syntax using
-                            BeautifulSoup.
-TreeSoup                  - BeautifulSoup-like wrapper around ElementTree.
-beautifulscraper          - Python web-scraping library that wraps urllib2 and
-                            BeautifulSoup.
-ElementSoup               - ElementTree wrapper for BeautifulSoup HTML parser
-beautifulsoup4            - Screen-scraping library
-collective.soupstrainer   - Clean up HTML using BeautifulSoup and filter
-                            rules.
-在cmd中敲入命令安装BeautifulSoup
-C:\Users\***>pip install BeautifulSoup
-Downloading/unpacking BeautifulSoup
-  Downloading BeautifulSoup-3.2.1.tar.gz
-  Running setup.py egg_info for package BeautifulSoup
-Installing collected packages: BeautifulSoup
-  Running setup.py install for BeautifulSoup
-Successfully installed BeautifulSoup
-Cleaning up...
-还可参见：安装Beautiful Soup
-<a>http://blog.sina.com.cn/s/blog_8af1069601019vr2.html</a>
-
-*************************************************
-PyYAML 
-可以利用pip进行安装
-C:\Users\***>pip search pyyaml
-PyYAML                    - YAML parser and emitter for Python
-pyaml                     - PyYAML-based module to produce pretty and readable
-                            YAML-serialized data
-yamly                     - pyyaml wrapper
-enhancedyaml              - It makes it more convenient to use PyYAML.
-C:\Users\***>pip install PyYAML
-Downloading/unpacking PyYAML
-  Downloading PyYAML-3.10.tar.gz (241kB): 241kB downloaded
-  Running setup.py egg_info for package PyYAML
-Installing collected packages: PyYAML
-  Running setup.py install for PyYAML
-    checking if libyaml is compilable
-    Unable to find vcvarsall.bat
-    skipping build_ext
-Successfully installed PyYAML
-Cleaning up...
-
-*************************************************
-nltk
-<a>https://pypi.python.org/pypi/nltk/</a>
-nltk 2.0.4
-File Type Py Version Uploaded on Size
-nltk-2.0.4.tar.gz (md5)  Source  2012-11-07 933KB
-nltk-2.0.4.win32.exe (md5)  MS Windows installer  2.5 2012-11-07 1MB
-nltk-2.0.4.zip (md5)  Source  2012-11-07 1MB
-下载nltk-2.0.4.tar.gz
-解压缩，在cmd中进入到nltk-2.0.4目录，执行 python setup.py install
-成功标志：
-Installed c:\python27\lib\site-packages\nltk-2.0.4-py2.7.egg
-Processing dependencies for nltk==2.0.4
-Searching for PyYAML==3.10
-Best match: PyYAML 3.10
-Adding PyYAML 3.10 to easy-install.pth file
-Using c:\python27\lib\site-packages
-Finished processing dependencies for nltk==2.0.4
-打开python Idle：
-输入import nltk
-输入nltk.download()
-出现一个NLTK Downloader对话框，修改Download Diretory（E盘或其他盘符下）。点击all开始下载。
-下载慢还可以到NLTK Corpora <a>http://nltk.org/nltk_data/</a>手工下载缺失的，然后放到Download Diretory，zip别删。
-重装系统后nltk_data文件夹可以保留，避免重复下载。
-
-*************************************************
-mysqldb
-<a>http://www.lfd.uci.edu/~gohlke/pythonlibs/</a>#mysql-python
-MySQL-python-1.2.4.win-amd64-py2.7.exe
-直接双击安装。
-成功验证：
-py文件：
-import MySQLdb
-connection = MySQLdb.connect(host=""127.0.0.1"",user=""root"",passwd=""root"",db=""dbtest"")
-cursor = connection.cursor()
-cursor.execute( ""Select id,content FROM tabletest  "")
-print ""Rows selected:"", cursor.rowcount
-运行结果输出dbtest数据库中tabletest表的行数。
+```
