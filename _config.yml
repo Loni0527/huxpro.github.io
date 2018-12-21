@@ -3,7 +3,7 @@ title: Loni
 SEOTitle: 山顶洞洞主 | Loni
 header-img: img/home-bg3.jpg
 email: niwota568@163.com
-description: "时间就是金钱，我的朋友"
+description: "这是一个网站，是的，没错。"
 keyword: "Loni, Loni Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计"
 url: "http://www.lo-ni.com"              # your host, for absolute URL
 baseurl: "/"                             # for example, '/blog' if your blog hosted on 'host/blog'
@@ -74,7 +74,7 @@ ga_domain: huangxuan.me
 
 # 边栏设置
 sidebar: true                           # 是否使用边栏.
-sidebar-about-description: "断剑重铸之日，骑士归来之时"
+sidebar-about-description: "时间就是金钱，我的朋友"
 sidebar-avatar: /img/avatar-hux-dog.jpg      # 使用绝对 URL, 如 '/' 或 '/about/'
 
 
