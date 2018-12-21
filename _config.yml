@@ -1,11 +1,11 @@
 # Site settings
 title: Loni
 SEOTitle: 山顶洞洞主 | Loni
-header-img: img/home-bg2.jpg
+header-img: img/home-bg3.jpg
 email: niwota568@163.com
-description: "这应该是自我介绍的地方"
+description: "时间就是金钱，我的朋友"
 keyword: "Loni, Loni Blog, 博客, 个人网站, 互联网, Web, JavaScript, 前端, 设计"
-url: "http://www.loni.club"              # your host, for absolute URL
+url: "http://www.lo-ni.com"              # your host, for absolute URL
 baseurl: "/"                             # for example, '/blog' if your blog hosted on 'host/blog'
 
 # Publish posts or collection documents with a future date.
