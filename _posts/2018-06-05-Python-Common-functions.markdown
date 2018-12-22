@@ -1,7 +1,6 @@
 ---
 author: Loni
 date: 2018-06-05 00:00
-iframe: //huangxuan.me/pwa-in-my-pov/
 layout: keynote
 navcolor: invert
 status: public

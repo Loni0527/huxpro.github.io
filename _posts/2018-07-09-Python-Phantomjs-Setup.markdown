@@ -1,9 +1,8 @@
 ---
 author: Loni
 date: 2018-07-09 00:00
-layout: keynote
+layout: post
 status: public
-subtitle:
 tags:
   - 随手记
   - Python

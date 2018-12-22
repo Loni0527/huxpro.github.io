@@ -1,10 +1,8 @@
 ---
 layout:     post
 title:      "Python or 关键字"
-subtitle:   ""
 date:       2018-06-24 12:00:00
 author:     "Loni"
-header-img: ""
 ---
 
 or 除了用在if中还可以用在赋值使用中
